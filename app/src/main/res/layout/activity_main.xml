@@ -5,50 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.user.resturantaid.MainActivity"
-    android:background="#ff66fa"
     android:orientation="vertical">
 
     <TextView
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="80dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="Resturant App"
-        android:textColor="#bf05c9"
+        android:textColor="#de2a2a"
         android:textStyle="bold"
         android:fontFamily="serif"/>
 
+    <ImageView
+        android:layout_marginLeft="95dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/thumb_110"
+        />
+
     <TextView
-        android:layout_marginBottom="7dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="156dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#fff"
+        android:textColor="#de2a2a"
         android:text="Admin"
         android:textStyle="bold"
         android:fontFamily="serif-monospace"
         android:textSize="17sp"/>
-    <EditText
 
+    <EditText
+        android:textSize="20sp"
         android:layout_marginLeft="40dp"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="email"
-        android:background="#fff"
+        android:background="#f46f6f"
         android:textColor="#000"
        android:padding="5dp"
         android:gravity="center"
         />
 
     <EditText
-        android:layout_marginTop="20dp"
+        android:maxLength="8"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="40dp"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="password"
-        android:background="#fff"
+        android:background="#f46f6f"
         android:textColor="#000"
         android:padding="5dp"
         android:gravity="center"
@@ -57,10 +68,10 @@
     <Button
         android:id="@+id/login"
         android:textColor="#fff"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="150dp"
         android:text="login"
-        android:background="#bf05c9"
+        android:background="#de2a2a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

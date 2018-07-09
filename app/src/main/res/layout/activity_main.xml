@@ -5,22 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
+    android:gravity="center"
     tools:context="com.example.user.resturantaid.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/parent">
 
     <TextView
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="80dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:text="Resturant App"
         android:textColor="#de2a2a"
         android:textStyle="bold"
-        android:fontFamily="serif"/>
+        android:fontFamily="sans-serif-condensed"/>
 
     <ImageView
-        android:layout_marginLeft="95dp"
         android:scaleType="fitXY"
         android:layout_marginTop="20dp"
         android:layout_width="190dp"
@@ -30,8 +29,6 @@
 
     <TextView
         android:layout_marginBottom="2dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="156dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#de2a2a"
@@ -41,39 +38,45 @@
         android:textSize="17sp"/>
 
     <EditText
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:id="@+id/username"
         android:textSize="20sp"
-        android:layout_marginLeft="40dp"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="email"
-        android:background="#f46f6f"
+        android:background="@drawable/email_pass_back"
         android:textColor="#000"
        android:padding="5dp"
         android:gravity="center"
+        android:fontFamily="serif-monospace"
         />
 
     <EditText
-        android:maxLength="8"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:id="@+id/pass"
+        android:fontFamily="serif-monospace"
         android:textSize="20sp"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="40dp"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="password"
-        android:background="#f46f6f"
+        android:background="@drawable/email_pass_back"
         android:textColor="#000"
         android:padding="5dp"
         android:gravity="center"
         />
 
     <Button
+        android:fontFamily="serif"
         android:id="@+id/login"
         android:textColor="#fff"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
         android:text="login"
-        android:background="#de2a2a"
-        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:background="@drawable/login_bak"
+        android:layout_width="150dp"
         android:layout_height="wrap_content" />
 
 

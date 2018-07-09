@@ -12,6 +12,11 @@ public class ImageUploadInfo {
 
     public ImageUploadInfo(String name, String url) {
 
+        if(name.toString().trim()==""){
+
+            imageName = "No name";
+        }
+
         this.imageName = name;
         this.imageURL= url;
     }
